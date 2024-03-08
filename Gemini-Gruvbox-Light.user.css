@@ -691,10 +691,29 @@ div.prompt-container:hover {
 	}
 	
 	
+	/*Prompt suggestion pills*/
+	rich-textarea .user-prompt-chip {
+    background: #79740E !important;
+    border-radius: 6px;
+    color: #FBF1C7 !important ; 
+    display: inline-block;
+    margin: 2px 0;
+    padding: 1px 6px;
+}
 	
 	
-	
-	
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 	
 	
 	
