@@ -367,10 +367,7 @@
 	
 	
 	
-	
-	
-	
-	
+
 	
 	
 	
@@ -1204,7 +1201,7 @@ background-color: #D8DC17 !important ;
 
 
 		font-weight: 600 !important ; 
-	font-family:"CommitMono", monospace !important;
+	font-family:"Cousine Nerd Font Mono", monospace !important;
 	
 }
 	
@@ -1213,14 +1210,7 @@ background-color: #D8DC17 !important ;
         background: #8EC07C !important ; 
     }
     
-        /* code Lanugage bar height*/
- div.code-block-decoration.header.gmat-subtitle-1 {
-  
-    font-weight: 500;
-    line-height: 1px !important;
-    
-   
-}
+
     
     
     
@@ -1228,6 +1218,7 @@ background-color: #D8DC17 !important ;
     /*Code block */
     div.code-block-decoration.footer.gmat-overline.hide-from-message-actions{
         background: #F0EDD8 !important ; 
+		
     }
     
     /*Lower bar height*/
@@ -1237,7 +1228,7 @@ background-color: #D8DC17 !important ;
     }
     
     
-    
+	
     
     
     
@@ -1303,41 +1294,8 @@ background-color: #D8DC17 !important ;
 
 	
 				
-/* Input bar color 				 */
-				div.text-input-field{
-					color : #FB4934 !important ; 
-					background : #FFD29C  !important  ; 
-						border: solid #665C54 !important  ; 
-					border-width: 0.1px !important ; 
-				}
+
 				
-				
-				/*Hover for the input button border style*/
-				div.text-input-field:hover{
-					color : #79740E !important ; 
-					background : #FFD29C  !important  ; 
-						border: solid #FFD29C !important  ; 
-					border-width: 0.1px !important ; 
-				}
-				
-				
-				
-				/*Input placehodler color chaged */
-					div.ql-editor.ui-v2-enabled.textarea.ql-blank:before{
-					color : #83A598 !important ; 
-				}
-				
-				
-					
-				/*Hover for input holder */
-					div.ql-editor.ui-v2-enabled.textarea.ql-blank:hover:before{
-					color : #FB4934 !important ; 
-				}
-				
-		
-				
-				
-	
 				
 				
 				
@@ -1654,7 +1612,78 @@ button.retry-without-tool-button.mdc-button.mat-mdc-button.mat-unthemed.mat-mdc-
 	
 	
 
+    
+    /*Prompt Input area*/
 	
+	/* Input bar color 				 */
+				div.text-input-field{
+					color : #FB4934 !important ; 
+					background : #FDF6E3  !important  ; 
+						border: solid #665C54 !important  ; 
+					border-width: 0.1px !important ; 
+                    border-radius: 20px  !important ; 
+				}
+				
+				
+				/*Hover for the input button border style*/
+				div.text-input-field:hover{
+					color : #79740E !important ; 
+					background : #F9F5D7  !important  ; 
+						border: solid #FFD29C !important  ; 
+					border-width: 0.1px !important ; 
+				}
+				
+				
+				
+				/*Input placehodler color chaged */
+					div.ql-editor.ui-v2-enabled.textarea.ql-blank:before{
+					color : #689D6A !important ; 
+				}
+				
+				
+					
+    div.ql-editor.textarea.ql-blank::before{
+        color : #79740E !important ; 
+    }		
+		
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	:root .light-theme {
+ 
+    --bard-color-file-preview-cancel-surface: #D79921 !important;
+    --bard-color-file-preview-cancel-surface-rgb: 221,227,0 !important;
+    --bard-color-processing-state-background-1: #689D6A !important;
+    --bard-color-processing-state-background-1-rgb: 219,231,255 !important;
+    --bard-color-processing-state-background-2: #689D6A !important;
+    --bard-color-processing-state-background-2-rgb: 0 ,241,0 !important;
+    --bard-color-processing-state-background-3: #98971A !important;
+    --bard-color-processing-state-background-3-rgb: 221,222, 0  !important;
+ 
+		
+		
+    --bard-color-skeleton-loader-background-1:  red  !important;
+    --bard-color-skeleton-loader-background-1-rgb: 72,127, 0 !important;
+    --bard-color-skeleton-loader-background-2: #98971A !important; 
+    --bard-color-skeleton-loader-background-2-rgb:7,127, 0   !important;
+    --bard-color-skeleton-loader-background-3: #FB4934 !important; 
+    --bard-color-skeleton-loader-background-3-rgb: 7,127, 0  !important;
+    --bard-color-skeleton-loader-background-alt-1: #FE8019 !important;
+    --bard-color-skeleton-loader-background-alt-1-rgb: 240,244,249 !important;
+    --bard-color-skeleton-loader-background-alt-2: #FB4934 !important;
+    --bard-color-skeleton-loader-background-alt-2-rgb: 232,205,0 !important;
+    --bard-color-skeleton-loader-background-alt-3: #98971A !important;
+    --bard-color-skeleton-loader-background-alt-3-rgb: 229,152,10 !important;
+   
+    
+}
 	
 	
 	
