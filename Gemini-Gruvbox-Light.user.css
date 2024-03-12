@@ -286,9 +286,7 @@
 		
 	
 	
-	
-	
-	
+
 	
 	
 	
@@ -432,7 +430,7 @@
 
 	
 	
-	
+
 	
 
 	
@@ -601,6 +599,10 @@ div.prompt-container:hover {
 	}
 
     
+	
+	
+	
+	
 
 	
 	
@@ -1074,6 +1076,12 @@ transform: translateX(-9.0rem);
 
 	
 }
+	
+	/*Understand your results button*/
+	button.learn-more .mdc-button__label {
+    color: #FB4934 !important;
+}
+
 
 	
 	
@@ -1100,8 +1108,27 @@ background-color: #FFD29C !important ;
     line-height: 1rem;
     font-family: Google Sans,Helvetica Neue,sans-serif;
     letter-spacing: .1px;
-    font-size: 11px;
+
 }
+	
+	
+	
+	/*Searcah realtatd topics when you click the google check button */
+	.mdc-button__label:nth-child(3) {
+    color: #79740E !important ; 
+}
+
+	
+	/*Hover for the search realted topics */
+	:root .light-theme .gmat-mdc-button.mat-mdc-button:not(.mat-mdc-button-disabled):not([disabled]):not(:disabled):hover {
+  
+    background: #FFD29C !important ; 
+	}
+	
+	
+	
+	
+	
 	
 	
 	
@@ -1371,14 +1398,15 @@ background-color: #FFD29C !important ;
 
 	
 	
+    .factuality-container {
+    background: #FBF1C7 !important  ; 
+    border-radius: 20px;
+    -webkit-margin-start: 44px;
+    -moz-margin-start: 44px;
+    margin-inline-start: 44px;
+}
     
-    
-    
-    
-    
-    
-    
-    
+ 
     
     
     
@@ -1483,11 +1511,7 @@ background-color: #FFD29C !important ;
 	
 	
 	
-	
-	
-	
-	
-	
+
 	
 	
 	
