@@ -820,13 +820,25 @@ font-weight: 500 !important ;
 	
 	a {
 		color : #FB4934 !important ; 
+		text-decoration: none;
+  background-image: linear-gradient(#9AA79D, #FB4934),
+    linear-gradient(#FB4934, #F2E5BC),
+    linear-gradient(#98971A, #B8BB26);
+  background-size: 20px 2px, 100% 2px, 0 2px;
+  background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 1s linear, background-position 1s linear;
 	}
 	
 	a:hover{
-		color : #8EC07C !important ; 
+		color : #79740E !important ; 
+		  background-size: 20px 2px, 0 2px, 100% 2px;
+  background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
 	}
 	a:visited {
-		color : #7C6F64 !important ; 
+		color : #79740E !important ; 
+		text-decoration: none;
+	
 	}
 	
 	
@@ -840,7 +852,7 @@ font-weight: 500 !important ;
 	
 	/*Research paper link HOver */
 	a.traceable-link:hover{
-		color : #B8BB26 !important ; 
+		color : #79740E !important ; 
 		text-decoration: none !important  ; 
 	}
 	
@@ -852,8 +864,14 @@ font-weight: 500 !important ;
 	
 	
 	
-	
-	
+	/*Code language heaader hright only */
+	:root .light-theme .gmat-subtitle-1 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1px !important;
+    font-family: "Google Sans","Helvetica Neue",sans-serif;
+    letter-spacing: normal;
+}
 	
 	
 	
@@ -1062,23 +1080,48 @@ transform: translateX(-9.0rem);
 	
 	
 /*Sources button  	 */
-	.recitations-list-container.ng-star-inserted {
-background-color: #D8DC17 !important ; 
+	.recitations-list-container{
+background-color: #FFD29C !important ; 
 
 	}
 
 	
+	/*Side baar recitation buttons*/
+.recitation-button {
+    border-radius: 18px;
+    border: none;
+    margin: 2px;
+    width: 18px;
+    height: 18px;
+    background: #FB4934 !important ;
+    color: #FBF1C7 !important ;
+    font-size: .75rem;
+    font-weight: 500;
+    line-height: 1rem;
+    font-family: Google Sans,Helvetica Neue,sans-serif;
+    letter-spacing: .1px;
+    font-size: 11px;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 /*Sources text  	 */
 	h4.gmat-overline.header{
-		color : #FFD29C !important ; 
+		color : #FB4934 !important ; 
 	}
 		
 		
 /*Heading in the chat 	 */
 	
 	h2{
-		color : #83A598 !important ; 
+		color : #147C8F !important ; 
 		
 		font-size: 1.04rem !important ;
 	}
@@ -1201,7 +1244,7 @@ background-color: #D8DC17 !important ;
 
 
 		font-weight: 600 !important ; 
-	font-family:"Cousine Nerd Font Mono", monospace !important;
+	font-family:"Harding Text Web regular regular", monospace !important;
 	
 }
 	
@@ -1217,7 +1260,7 @@ background-color: #D8DC17 !important ;
     
     /*Code block */
     div.code-block-decoration.footer.gmat-overline.hide-from-message-actions{
-        background: #F0EDD8 !important ; 
+        background: #E2CEA5 !important ; 
 		
     }
     
@@ -1260,6 +1303,12 @@ background-color: #D8DC17 !important ;
 	.chat-container{
     background: #F2E5BC  !important ; 
 
+}
+	
+	
+	/*Top nbar wird border that just wont go  anywhere */
+	.chat-history:before {
+ border: none !important ; 
 }
 	
 	
@@ -1354,23 +1403,23 @@ background-color: #D8DC17 !important ;
 	/*Table styles*/
 	
 	th{
-		background-color : #2E5B40 !important ; 
-		color : #FFD29C !important ; 
+		background-color : #F2E5BC !important ; 
+		 font-family: "Harding Text Web Regular Regular" !important;
 	}
 	
 	
 	td{
-		background: #1A1B1D !important ; 
-		color : #FBF1C7 !important ; 
+		background: #FBF1C7 !important ; 
+		color : #79740E !important ; 
 		font-size: 0.9rem !important ; 
-		font-family: "chivo" !important ; 
+		 font-family: "Harding Text Web Regular Regular" !important;
 	}
 	
 	
 	/*Lower par of the tabele*/
 	div.table-footer.hide-from-message-actions {
 		color : red !important ; 
-		background: #16181A !important ; 
+		background: #689557 !important ; 
 	}
 	
 	
@@ -1473,7 +1522,7 @@ background-color: #D8DC17 !important ;
 	/*Background color to background*/
 	.processing-state_container{
 		
-		background-color : #CC241D !important ; 
+		background-color : #FB4934 !important ; 
 	} 
 	
 	
@@ -1485,18 +1534,22 @@ background-color: #D8DC17 !important ;
 	
 	
 	
+
+	
+	
+	
 	
 	/*Try Without extensions button fixed */
 button.retry-without-tool-button.mdc-button.mat-mdc-button.mat-unthemed.mat-mdc-button-base.gmat-mdc-button {
 	
-	background-color : #2E5B40 !important ; 
+	background-color : #79740E !important ; 
 	border-radius: 2rem !important ; 
 	}
 	
 	/*Hover -> Try Without extesnsions */
 button.retry-without-tool-button.mdc-button.mat-mdc-button.mat-unthemed.mat-mdc-button-base.gmat-mdc-button:hover{
 	
-	background-color : #9D0006 !important ; 
+	background-color : #3A3706 !important ; 
 	border-radius: 2rem !important ; 
 	}
 	
@@ -1525,11 +1578,11 @@ button.retry-without-tool-button.mdc-button.mat-mdc-button.mat-unthemed.mat-mdc-
 	
 	/*Youtube video titles*/
 	span.title{
-		color : #B8BB26 !important ; 
+		color : #79740E !important ; 
 	}
 	
 		span.title:hover{
-		color : #D8DC17 !important ; 
+		color : #076678 !important ; 
 	}
 	
 	
@@ -1538,7 +1591,7 @@ button.retry-without-tool-button.mdc-button.mat-mdc-button.mat-unthemed.mat-mdc-
 	
 	/*Youtube channel name*/
 	span.channel-name{
-		color : #FB4934 !important ; 
+		color : #B16286 !important ; 
 	}
 	
 	span.channel-name:hover{
@@ -1548,13 +1601,13 @@ button.retry-without-tool-button.mdc-button.mat-mdc-button.mat-unthemed.mat-mdc-
 	
 	/*Youtube VIdeo description */
 	span.description{
-		color : #D5C4A1 !important ; 
+		color : #147C8F !important ; 
 	}
 	
 	
 	/*Youtube Tos */
 	span.youtube-tos{
-		color : #7C6F64 !important ; 
+		color : #A89988 !important ; 
 	}
 	
 	
@@ -1671,10 +1724,14 @@ button.retry-without-tool-button.mdc-button.mat-mdc-button.mat-unthemed.mat-mdc-
 		
     --bard-color-skeleton-loader-background-1:  red  !important;
     --bard-color-skeleton-loader-background-1-rgb: 72,127, 0 !important;
+		
+		
+		
+		/*This here constitutes the Gruvbox green color that is shown here */
     --bard-color-skeleton-loader-background-2: #98971A !important; 
-    --bard-color-skeleton-loader-background-2-rgb:7,127, 0   !important;
+    --bard-color-skeleton-loader-background-2-rgb:152, 151, 26 !important;
     --bard-color-skeleton-loader-background-3: #FB4934 !important; 
-    --bard-color-skeleton-loader-background-3-rgb: 7,127, 0  !important;
+    --bard-color-skeleton-loader-background-3-rgb: 152, 151, 26  !important;
     --bard-color-skeleton-loader-background-alt-1: #FE8019 !important;
     --bard-color-skeleton-loader-background-alt-1-rgb: 240,244,249 !important;
     --bard-color-skeleton-loader-background-alt-2: #FB4934 !important;
