@@ -1,6 +1,7 @@
+
 /* ==UserStyle==
-@name           gemini.google.com - Feb 2024
-@namespace      github.com/geminilgith
+@name           gemini.theme light pasted
+@namespace      github.com/newgeminilight
 @version        1.0.1
 @description    This user style will apply the google chivo font to everything page you visit 
                 I have made some changes in it 
@@ -792,7 +793,7 @@ div.prompt-container:hover {
 	strong {
 		
  font-family: "Harding Text Web Regular Regular";
-		color : #CC241D !important ; 
+		color : #7a750b !important ; 
 font-weight: 500 !important ; 
 		font-size: 1.07rem !important ; 
 	}
@@ -1479,7 +1480,7 @@ background-color: #FFD29C !important ;
 	
 	/*New Chat*/
 	button.expandable-button.gmat-body-2.mdc-button.mat-mdc-button.mat-unthemed.mat-mdc-button-base.expanded{ 
-		background: #FB4934 !important ;
+		background: #faedcd !important ;
 		
 	}
 	
@@ -1786,3 +1787,4 @@ button.retry-without-tool-button.mdc-button.mat-mdc-button.mat-unthemed.mat-mdc-
 	
 	
  
+
