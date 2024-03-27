@@ -1727,6 +1727,39 @@ button.retry-without-tool-button.mdc-button.mat-mdc-button.mat-unthemed.mat-mdc-
 	
 	
 	
+	
+	
+	/*Delete chat button*/
+	
+	/*Delete chat*/
+	h1.mat-mdc-dialog-title.mdc-dialog__title.gmat-headline-4{
+		color : #7a750b !important ; 
+	}
+	
+	
+	
+	/*Delete and Cancel button*/
+	button.mdc-button.mat-mdc-button.mat-primary.mat-mdc-button-base.gmat-mdc-button{
+		background-color:  #cc241d !important ; 
+	}
+	
+	/*Hover for the Chat button*/
+	:root .light-theme .gmat-mdc-button.mat-mdc-button:not(.mat-mdc-button-disabled):not([disabled]):not(:disabled):hover {
+    background: #fb4934 !important;
+}
+	
+	
+	
+	
+	/*Delete chat  in the background*/
+	:root .light-theme .gmat-mdc-dialog .mat-mdc-dialog-container .mat-mdc-dialog-surface {
+background:  #fbf1c7 !important ; 
+}
+	
+	
+	
+	
+	
 
 	
 	
