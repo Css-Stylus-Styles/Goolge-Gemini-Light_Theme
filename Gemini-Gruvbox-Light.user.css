@@ -1,7 +1,7 @@
 
 /* ==UserStyle==
-@name           gemini.theme light pasted
-@namespace      github.com/newgeminilight
+@name           gemini.google.com - Feb 2024
+@namespace      github.com/geminilgith
 @version        1.0.1
 @description    This user style will apply the google chivo font to everything page you visit 
                 I have made some changes in it 
@@ -281,7 +281,7 @@
 	
 					
 				div.response-container {
-    background-color: #F9F5D7 !important;
+    background-color: #f9f5d7 !important;
  
 }
 		
@@ -793,7 +793,7 @@ div.prompt-container:hover {
 	strong {
 		
  font-family: "Harding Text Web Regular Regular";
-		color : #7a750b !important ; 
+		color : #CC241D !important ; 
 font-weight: 500 !important ; 
 		font-size: 1.07rem !important ; 
 	}
@@ -1399,6 +1399,9 @@ background-color: #FFD29C !important ;
 
 	
 	
+	
+	
+	/*Factuality container*/
     .factuality-container {
     background: #FBF1C7 !important  ; 
     border-radius: 20px;
@@ -1480,7 +1483,7 @@ background-color: #FFD29C !important ;
 	
 	/*New Chat*/
 	button.expandable-button.gmat-body-2.mdc-button.mat-mdc-button.mat-unthemed.mat-mdc-button-base.expanded{ 
-		background: #faedcd !important ;
+		background: #FB4934 !important ;
 		
 	}
 	
@@ -1729,64 +1732,31 @@ button.retry-without-tool-button.mdc-button.mat-mdc-button.mat-unthemed.mat-mdc-
 	
 	
 	
-	/*Delete chat button*/
+	/*Delete chat dialogue box */
+	.mat-mdc-dialog-surface.mdc-dialog__surface{
+		background: #ffd29c !important ; 
+	}
 	
-	/*Delete chat*/
+	
+	/*Cancel  , delete button */
+	span.mdc-button__label{
+		color : #79740e !important ; 
+	}
+	
 	h1.mat-mdc-dialog-title.mdc-dialog__title.gmat-headline-4{
-		color : #7a750b !important ; 
+		color : #598e5b !important ; 
 	}
 	
-	
-	
-	/*Delete and Cancel button*/
-	button.mdc-button.mat-mdc-button.mat-primary.mat-mdc-button-base.gmat-mdc-button{
-		background-color:  #cc241d !important ; 
-	}
-	
-	/*Hover for the Chat button*/
-	:root .light-theme .gmat-mdc-button.mat-mdc-button:not(.mat-mdc-button-disabled):not([disabled]):not(:disabled):hover {
-    background: #fb4934 !important;
-}
-	
-	
-	
-	
-	/*Delete chat  in the background*/
-	:root .light-theme .gmat-mdc-dialog .mat-mdc-dialog-container .mat-mdc-dialog-surface {
-background:  #fbf1c7 !important ; 
-}
-	
-	
-	
-	
-	
-
-	
-	
-	
-
 	
 	
 	:root .light-theme {
  
-    --bard-color-file-preview-cancel-surface: #D79921 !important;
-    --bard-color-file-preview-cancel-surface-rgb: 221,227,0 !important;
-    --bard-color-processing-state-background-1: #689D6A !important;
-    --bard-color-processing-state-background-1-rgb: 219,231,255 !important;
-    --bard-color-processing-state-background-2: #689D6A !important;
-    --bard-color-processing-state-background-2-rgb: 0 ,241,0 !important;
-    --bard-color-processing-state-background-3: #98971A !important;
-    --bard-color-processing-state-background-3-rgb: 221,222, 0  !important;
- 
-		
-		
-    --bard-color-skeleton-loader-background-1:  red  !important;
-    --bard-color-skeleton-loader-background-1-rgb: 72,127, 0 !important;
+    
 		
 		
 		
 		/*This here constitutes the Gruvbox green color that is shown here */
-    --bard-color-skeleton-loader-background-2: #98971A !important; 
+    --bard-color-skeleton-loader-background-2: #FABD2F !important; 
     --bard-color-skeleton-loader-background-2-rgb:152, 151, 26 !important;
     --bard-color-skeleton-loader-background-3: #FB4934 !important; 
     --bard-color-skeleton-loader-background-3-rgb: 152, 151, 26  !important;
@@ -1794,12 +1764,20 @@ background:  #fbf1c7 !important ;
     --bard-color-skeleton-loader-background-alt-1-rgb: 240,244,249 !important;
     --bard-color-skeleton-loader-background-alt-2: #FB4934 !important;
     --bard-color-skeleton-loader-background-alt-2-rgb: 232,205,0 !important;
-    --bard-color-skeleton-loader-background-alt-3: #98971A !important;
+    --bard-color-skeleton-loader-background-alt-3: #D8DC17 !important;
     --bard-color-skeleton-loader-background-alt-3-rgb: 229,152,10 !important;
    
     
 }
+
+	/*This is for the message sneding lines animation */
+	/*
+		.animated-line-inner {
+
+}
+
 	
+	*/
 	
 	
 	
