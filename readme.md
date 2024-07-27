@@ -142,3 +142,4 @@ Markdown tables
 
 ## Todo : 
 - search and check with google 
+- make theme animation nicer 
