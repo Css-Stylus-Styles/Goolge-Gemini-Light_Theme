@@ -1086,13 +1086,33 @@ transform: translateX(-9.0rem);
 
 	
 	
-	
+	/*Citation*/
 	
 /*Sources button  	 */
 	.recitations-list-container{
 background-color: #FFD29C !important ; 
 
 	}
+	
+	/*citation button background and border color */
+	.button.image-fade-on {
+  background-color: #f9f5d7 !important;
+  border: 2px solid #504945 !important;
+}
+	
+	/*citation button background and border color (HOVER)*/
+	.button.image-fade-on:hover{
+  background-color: #f2e5bc !important;
+  border: 2.4px solid #fb4934 !important;
+}
+
+	
+	
+	/*The arrow color in the citation button */
+	.button.image-fade-on .mat-icon {
+  color: #98971a !important;
+}
+	
 
 	
 	/*Side baar recitation buttons*/
