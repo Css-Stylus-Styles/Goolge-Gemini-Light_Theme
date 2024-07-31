@@ -573,7 +573,7 @@ div.prompt-container:hover {
 	/*Side bar chat active button */
 	div.mat-mdc-tooltip-trigger.conversation.selected{
 		background-color : #FDF6E3 !important  ; 
-		color : #FFD29C  !important ; 
+		color : #79740e  !important ; 
 	}
 	
 	/*Actual conversation */
@@ -1154,7 +1154,11 @@ background-color: #FFD29C !important ;
 		font-size: 1.04rem !important ;
 	}
 	
-	
+	h3 { 
+			color : #79740e !important ; 
+		
+		font-size: 1.04rem !important ;
+	}
 	
 	
 	
@@ -1483,12 +1487,11 @@ background-color: #FFD29C !important ;
 	
 	/*New Chat*/
 	button.expandable-button.gmat-body-2.mdc-button.mat-mdc-button.mat-unthemed.mat-mdc-button-base.expanded{ 
-		background: #FB4934 !important ;
+		background: #fbf1c7 !important ;
 		
 	}
 	
 
-	
 	
 	
 	
