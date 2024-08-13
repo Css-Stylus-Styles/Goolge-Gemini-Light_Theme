@@ -529,7 +529,7 @@ div.prompt-container:hover {
 	
 	
 	
-	/*Front page prompt suggestion text color */
+	/*Front page prompt suggestion  color */
 	p.prompt-text-content{
 		color: #FFD29C !important ; 
 		
@@ -785,17 +785,17 @@ div.prompt-container:hover {
 /* Paragraph styles 	 */
 	p {
 		color : #1D1B1A !important ; 
-	
-		 font-family: "Harding Text Web Regular Regular" !important;
+		font-family: "Margon360W08-Medium" !important ; 
+		font-size : 1rem !important ; 
 		
 	}
 	
 	strong {
 		
- font-family: "Harding Text Web Regular Regular";
+ font-family: "chivo" !important ;
 		color : #CC241D !important ; 
 font-weight: 500 !important ; 
-		font-size: 1.07rem !important ; 
+		font-size: .97rem !important ; 
 	}
 	
 	
@@ -805,7 +805,7 @@ font-weight: 500 !important ;
 	li ,
 	ol  , ul{
 		color : #16181A !important ; 
-		 font-family: "Harding Text Web Regular Regular" !important;
+		font-family: "Margon360W08-Medium" !important ; 
 		
 	}
 	
@@ -1163,24 +1163,37 @@ background-color: #FFD29C !important ;
 /*Sources text  	 */
 	h4.gmat-overline.header{
 		color : #FB4934 !important ; 
+				font-family: "Margon360W08-Medium" !important ; 
+		font-weight : 600 !important ; 
 	}
 		
 		
 /*Heading in the chat 	 */
 	
 	h2{
-		color : #147C8F !important ; 
-		
-		font-size: 1.04rem !important ;
+		color : #f57d26 !important ; 
+		font-family: "Margon360W08-Medium" !important ; 
+		font-size: 1.2rem !important ;
 	}
 	
+	/*H2 heading */
 	h3 { 
 			color : #79740e !important ; 
 		
-		font-size: 1.04rem !important ;
+		font-family: "Margon360W08-Medium" !important ; 
+	font-size: 1.16rem !important; 
+		font-weight : 600 !important ; 
 	}
 	
-	
+/*heading 4 
+H$ heading */
+h4 { 
+			color : #2e5b40 !important ; 
+		
+		font-family: "Margon360W08-Medium" !important ; 
+		font-weight : 600 !important ; 
+	font-size: 1.05rem !important; 
+	}
 	
 	
 	
