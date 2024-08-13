@@ -780,16 +780,18 @@ div.prompt-container:hover {
 	
 	
 	
-	
-	
+	/*normal text */
+	/*P text */
 /* Paragraph styles 	 */
 	p {
 		color : #1D1B1A !important ; 
-		font-family: "Margon360W08-Medium" !important ; 
+		font-family: "Harding text web" !important ; 
 		font-size : 1rem !important ; 
 		
 	}
 	
+	/*bold text */
+	/*Strong text */
 	strong {
 		
  font-family: "chivo" !important ;
@@ -806,6 +808,7 @@ font-weight: 500 !important ;
 	ol  , ul{
 		color : #16181A !important ; 
 		font-family: "Margon360W08-Medium" !important ; 
+		font-size : 1rem !important ; 
 		
 	}
 	
