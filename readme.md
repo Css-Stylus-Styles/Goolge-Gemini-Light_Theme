@@ -141,5 +141,6 @@ Markdown tables
 
 
 ## Todo : 
-- search and check with google 
-- make theme animation nicer 
+- fix gradient 
+- fix the werid font for the coding the font is not being folded 
+-       mess with the font height 
