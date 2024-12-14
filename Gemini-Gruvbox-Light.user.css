@@ -2,7 +2,7 @@
 /* ==UserStyle==
 @name           gemini.google.com - Feb 2024
 @namespace      github.com/geminilgith
-@version        1.0.2
+@version        1.0.3
 @description    This user style will apply the google chivo font to everything page you visit 
                 I have made some changes in it 
                 this will not change the following 
@@ -1489,11 +1489,18 @@ background-color: #FFD29C !important ;
 	
 	}
 	
+	/*Language background bar above code */
+	.code-block .header-formatted{
+		background:  #f2e5bc !important ; 
+	}
+
 	
 	/*Code language*/
-	div.code-block-decoration.header.gmat-subtitle-1{
-		color  : #F2E5BC !important ; 
-	}
+	.code-block-decoration > span:first-child {
+    color: #fb4934 !important;
+	font-family: "Jetbrains Mono" !important ; 
+		font-weight: 800 !important ; 
+}
 	
 	
 	/*Use code ->udner code bar */
@@ -1508,7 +1515,7 @@ background-color: #FFD29C !important ;
 	
 /*Main code  background 	 */
 	code.code-container{
-		color  : #79740E !important ; 
+		color  : #79740e !important ; 
 		background-color : #F2E5BC !important ; 
 		
 	}
@@ -1520,7 +1527,7 @@ background-color: #FFD29C !important ;
 	
 	
 	 span.hljs-comment{
-		color : #7C6F64 !important; 
+		color : #928374 !important; 
 	}
 	
 	 span.hljs-number{
@@ -1585,7 +1592,7 @@ background-color: #FFD29C !important ;
 
 
 		font-weight: 600 !important ; 
-	font-family:"Harding Text Web regular regular", monospace !important;
+	font-family:"JetBrains Mono", monospace !important;
 	
 }
 	
