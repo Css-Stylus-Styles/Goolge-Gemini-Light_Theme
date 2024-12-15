@@ -141,6 +141,6 @@ Markdown tables
 
 
 ## Todo : 
-- fix gradient 
 - fix the werid font for the coding the font is not being folded 
 -       mess with the font height 
+- add border to languages 
