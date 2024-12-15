@@ -145,3 +145,4 @@ Markdown tables
 -       mess with the font height 
 
 - Width of the whole interface is nto wroking right (fix  and investigate this ) 
+- Fix the links and links font and stuff 
