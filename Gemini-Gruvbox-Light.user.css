@@ -2,7 +2,7 @@
 /* ==UserStyle==
 @name           gemini.google.com - Feb 2024
 @namespace      github.com/geminilgith
-@version        1.0.5
+@version        1.0.6
 @description    This user style will apply the google chivo font to everything page you visit 
                 I have made some changes in it 
                 this will not change the following 
@@ -305,12 +305,28 @@
 
 
 
+@font-face {
+    font-family: "Fantasque Sans Mono";
+    src: url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.eot");
+    src: url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.svg#Fantasque Sans Mono")format("svg");
+}
 
 
 
 
-
-
+@font-face {
+    font-family: "Fantasque Sans Mono Bold";
+    src: url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.eot");
+    src: url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.svg#Fantasque Sans Mono Bold")format("svg");
+}
 
 
 
@@ -1124,6 +1140,9 @@ font-weight: 500 !important ;
 	
 	a {
 		color : #FB4934 !important ; 
+		
+	font-family: "Fantasque Sans Mono Bold" !important ;
+		font-size: 1.1rem !important ; 
 		text-decoration: none;
   background-image: linear-gradient(#9AA79D, #FB4934),
     linear-gradient(#FB4934, #F2E5BC),
@@ -1131,7 +1150,7 @@ font-weight: 500 !important ;
   background-size: 20px 2px, 100% 2px, 0 2px;
   background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  transition: background-size 1s linear, background-position 1s linear;
+  transition: background-size 4s linear, background-position 2s linear;
 	}
 	
 	a:hover{
