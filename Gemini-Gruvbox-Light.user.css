@@ -2,7 +2,7 @@
 /* ==UserStyle==
 @name           gemini.google.com - Feb 2024
 @namespace      github.com/geminilgith
-@version        1.0.6
+@version        1.0.7
 @description    This user style will apply the google chivo font to everything page you visit 
                 I have made some changes in it 
                 this will not change the following 
@@ -1378,9 +1378,22 @@ font-weight: 500 !important ;
 		 width : 55rem   !important  ; 
 /* 					 translatey :  40px !important ;  */
 /* 			padding-right: 3rem  !important;  */
-transform: translateX(-9.0rem);
+transform: translateX(-8.0rem);
 
 	}
+	
+
+	
+	div.response-container{
+    width: 90vw !important;
+ 		 width : 55rem   !important  ; 
+/* 					 translatey :  40px !important ;  */
+/* 			padding-right: 3rem  !important;  */
+transform: translateX(-8.0rem);
+   max-width: 90vw !important;
+}
+	
+	
 	
 	
 
