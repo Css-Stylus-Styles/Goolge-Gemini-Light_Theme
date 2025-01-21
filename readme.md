@@ -145,3 +145,14 @@ Markdown tables
 -       mess with the font height 
 
 - Width of the whole interface is nto wroking right (fix  and investigate this ) 
+
+- simplify the installtion guide 
+ using a template 
+ there are things in the template that will not change even in multiple sessions 
+ - every template shoud folllow a similar structure 
+-  instllattion 
+- config options 
+- Fonts if necessary  
+- inportant considerations 
+- screenshots 
+- Liscene 
