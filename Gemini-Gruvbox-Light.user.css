@@ -1,24 +1,8 @@
 /* ==UserStyle==
 @name           Gemini-Gruvbox-Light
 @namespace      github.com/Css-Styles-Styles/Gemini-Gruvbox-Light
-@version        1.0.0
-@description    Gemini-Gruvbox-Light style - Light mode theme with warm paper-like background
-@author         Me
-@preprocessor   stylus
-
-
-
-@var checkbox  noLogo   "NO Hello text "                 1
-@var checkbox   noUpgrade "No Upgrade Button"            1
-@var checkbox   noGoogle "No Google Account Button"      1
-@var checkbox   noAddress "Hide your location from menu" 1
-@var checkbox   LocalFont  "Local Placeholder Font"      0
-@var checkbox   LoadWebFont  "Load Font From Web"        0
-
-:root {
-  --fallback-text: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-}
-
+@version        1.1.2
+@description    Gemini-Gruvbox-Light style (Remade)
 
 @var select newfont 'Text Font' [
     'Test Tiempos Text',
@@ -39,7 +23,6 @@
 
 ==/UserStyle== */
 @-moz-document domain("gemini.google.com") {
-
 	/* Insert code here... */
 	/*Font Import */
 	/*Importing Margon */
@@ -440,7 +423,6 @@
 		--shadow-light: #3c474d20;
 
 
-
 		--text-offwhite: #fbf1c7;
 		--text-offyellowish: #f2e5bc;
 		--text-white: #f9f5d7;
@@ -535,7 +517,7 @@
 	/* Html and body tags  */
 	html,
 	body {
-		background: var(--bg0-light) !important;
+		background: var(--bg-dark-new) !important;
 		-webkit-font-smoothing: antialiased !important;
 		-moz-osx-font-smoothing: grayscale !important;
 		text-rendering: optimizeLegibility !important;
@@ -544,148 +526,19 @@
 
 
 
-	.bard-sidenav-content {
+	.bard-sidenav-content { 
 
-		background-color: var(--bg0-light) !important;
+	background-color: transparent !important ; 
 
 
 	}
 
-	/* ============================================= */
-	/* COMPREHENSIVE LIGHT THEME OVERRIDES */
-	/* ============================================= */
-
-	/* Main app container and all backgrounds */
-	.mat-sidenav-container,
-	.mat-drawer-container,
-	mat-sidenav,
-	mat-drawer,
-	.mat-sidenav,
-	.mat-drawer,
-	.sidenav,
-	.side-nav,
-	.sidebar,
-	bard-sidenav,
-	bard-sidenav-container,
-	.bard-sidenav,
-	[class*="sidenav"],
-	[class*="side-nav"] {
-		background-color: var(--bg1-light) !important;
-		background: var(--bg1-light) !important;
-	}
-
-	/* Sidenav content and panels */
-	.mat-sidenav-content,
-	.mat-drawer-content,
-	.sidenav-content,
-	.side-nav-content,
-	.nav-content,
-	.nav-panel,
-	.panel,
-	.drawer-content {
-		background-color: var(--bg0-light) !important;
-		background: var(--bg0-light) !important;
-	}
-
-	/* Main content area */
-	main,
-	.main-content,
-	.content,
-	.chat-window,
-	.chat-container,
-	.response-container,
-	.conversation-container,
-	[class*="chat"],
-	[class*="conversation"] {
-		background-color: var(--bg0-light) !important;
-	}
-
-	/* Input area and footer */
-	.input-area,
-	.input-container,
-	.input-wrapper,
-	.footer,
-	.chat-input,
-	.message-input,
-	input-area-v2,
-	input-area-v2>div,
-	[class*="input-area"],
-	[class*="footer"] {
-		background-color: var(--bg1-light) !important;
-		background: var(--bg1-light) !important;
-		border-color: var(--bg3-light) !important;
-	}
-
-	/* Gem tiles and cards in sidebar */
-	.gem-tile,
-	.bot-tile,
-	.gem-card,
-	[class*="gem-"],
-	[class*="bot-tile"],
-	.recent-gem,
-	.pinned-gem {
-		background-color: var(--bg2-light) !important;
-		border-color: var(--bg4-light) !important;
-	}
-
-	/* Menu and dropdown backgrounds */
-	.mat-menu-panel,
-	.mat-mdc-menu-panel,
-	.cdk-overlay-pane,
-	.mat-select-panel,
-	.dropdown,
-	.popup,
-	.tooltip,
-	[class*="menu"],
-	[class*="dropdown"],
-	[class*="popup"] {
-		background-color: var(--bg1-light) !important;
-		background: var(--bg1-light) !important;
-	}
-
-	/* Cards and containers */
-	.mat-card,
-	.mat-mdc-card,
-	.card,
-	.container,
-	.box,
-	.wrapper {
-		background-color: var(--bg1-light) !important;
-	}
-
-	/* Buttons in light theme */
-	button,
-	.mat-button,
-	.mat-mdc-button,
-	.mdc-button {
-		background-color: transparent !important;
-	}
-
-	button:hover,
-	.mat-button:hover,
-	.mat-mdc-button:hover {
-		background-color: var(--bg3-light) !important;
-	}
-
-	/* Override any remaining dark backgrounds */
-	[style*="background-color: rgb(31"],
-	[style*="background-color: rgb(23"],
-	[style*="background-color: rgb(40"],
-	[style*="background-color: rgb(28"],
-	[style*="background: rgb(31"],
-	[style*="background: rgb(23"],
-	[style*="background: rgb(40"],
-	[style*="background: rgb(28"] {
-		background-color: var(--bg1-light) !important;
-		background: var(--bg1-light) !important;
-	}
 
 
+/* Direct Theme information  */
 
-	/* Direct Theme information  */
-
-	:root .light-theme {
-		/* --bard-color-neutral-90: #37393b;
+:root .dark-theme {
+    /* --bard-color-neutral-90: #37393b;
     --bard-color-neutral-95: #2a2a2a;
     --bard-color-neutral-96: #2a2ad2;
     --bard-color-enterprise-greeting: #474747;
@@ -820,24 +673,24 @@
     --bard-color-product-card-image-container-background: #fff; */
 
 
+	
 
+    
 
-
-
-		/* --bard-color-sidenav-tile-background-aurora: #202424;
+    /* --bard-color-sidenav-tile-background-aurora: #202424;
     --bard-color-sidenav-tile-text-aurora: #adb0bc;
     --bard-color-input-companion-button-hover-background: #32373c;
     --bard-color-input-companion-button-active-background: #383d45; */
-	}
+}
 
-	/* This style is very important to remove the ugly seam that is there in the home page  */
+/* This style is very important to remove the ugly seam that is there in the home page  */
 
-	:root .light-theme {
+:root .dark-theme {
 
-		--bard-color-surface-dim-tmp: none !important;
+--bard-color-surface-dim-tmp: none  !important; 
 
 
-	}
+}
 
 
 
@@ -846,7 +699,7 @@
 	/* Colors and other styling options for General Html tags  */
 
 	p {
-		color: var(--fg-light) !important;
+		color: var(--text-offwhite-faded) !important;
 		font-size: 1rem !important;
 		-webkit-font-smoothing: antialiased !important;
 		-moz-osx-font-smoothing: grayscale !important;
@@ -856,7 +709,7 @@
 	li,
 	ol,
 	ul {
-		color: var(--fg-light) !important;
+		color: var(--text-offwhite) !important;
 		font-size: 1rem !important;
 		-webkit-font-smoothing: antialiased !important;
 		-moz-osx-font-smoothing: grayscale !important;
@@ -864,7 +717,7 @@
 	}
 
 	li::marker {
-		color: var(--light-green) !important;
+		color: var(--dim-green) !important;
 		-webkit-font-smoothing: antialiased !important;
 		-moz-osx-font-smoothing: grayscale !important;
 		text-rendering: optimizeLegibility !important;
@@ -877,7 +730,7 @@
 
 	/* Heading 1  will get a diff color  */
 	h1 {
-		color: var(--dark-aqua) !important;
+		color: var(--faded-aqua) !important;
 		-webkit-font-smoothing: antialiased !important;
 		-moz-osx-font-smoothing: grayscale !important;
 		text-rendering: optimizeLegibility !important;
@@ -885,7 +738,7 @@
 
 	/* Heading 2 styles */
 	h2 {
-		color: var(--dark-blue) !important;
+		color: var(--faded-blue) !important;
 		font-weight: 500 !important;
 		-webkit-font-smoothing: antialiased !important;
 		-moz-osx-font-smoothing: grayscale !important;
@@ -895,7 +748,7 @@
 
 	/* Heading 3 styles */
 	h3 {
-		color: var(--dark-yellow) !important;
+		color: var(--faded-yellow) !important;
 		font-weight: 500 !important;
 		-webkit-font-smoothing: antialiased !important;
 		text-rendering: optimizeLegibility !important;
@@ -903,21 +756,21 @@
 
 	/* Heading 4 styles */
 	h4 {
-		color: var(--dark-aqua) !important;
+		color: var(--faded-aqua) !important;
 		-webkit-font-smoothing: antialiased !important;
 		text-rendering: optimizeLegibility !important;
 	}
 
 	/* Heading 5 styles */
 	h5 {
-		color: var(--dark-aqua) !important;
+		color: var(--faded-aqua) !important;
 		-webkit-font-smoothing: antialiased !important;
 		text-rendering: optimizeLegibility !important;
 	}
 
 	/* Heading 6 styles */
 	h6 {
-		color: var(--light-green) !important;
+		color: var(--faded-green) !important;
 		-webkit-font-smoothing: antialiased !important;
 		text-rendering: optimizeLegibility !important;
 	}
@@ -925,22 +778,22 @@
 	/* SVG colors , mat-icon is for material icons */
 	svg,
 	.mat-icon {
-		color: var(--light-green) !important;
+		color: var(--faded-green) !important;
 		stroke-width: 5px !important;
 	}
 
 	/* Chat History Container */
 	.infinite-scroller.chat-history {
-		background-color: var(--bg0-light) !important;
-		border: 1px solid var(--bg3-light) !important;
+		background-color: var(--bg-def-dark) !important;
+		border: 1px solid var(--bg1-dark) !important;
 		border-radius: 8px !important;
 		padding: 12px !important;
 		margin: 8px 0 !important;
 		transition: all 0.3s ease-in-out !important;
 
 		&:hover {
-			border-color: var(--dark-blue) !important;
-			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+			border-color: var(--faded-blue) !important;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
 		}
 	}
 
@@ -950,15 +803,15 @@
 
 	/* Button with icon styles - Matching Create Image button */
 	.mat-mdc-button:has(.material-icons, mat-icon) {
-		border: 1px solid var(--interface-light0-hard) !important;
+		border: 1px solid var(--bg0-dh) !important;
 		border-radius: 3em !important;
 		transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
 
 
 		&:hover {
-			background-color: var(--bg0-light) !important;
-			border-color: var(--bg5-light) !important;
-			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08) !important;
+			background-color: var(--bg-def-dark) !important;
+			border-color: var(--bg3-dark) !important;
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
 			padding: 0rem 2rem !important;
 		}
 
@@ -973,9 +826,9 @@
 	/* Table cell and row text color */
 	td,
 	tr {
-		color: var(--fg-light) !important;
-		background-color: var(--bg1-light) !important;
-		border: 1px solid var(--bg3-light) !important;
+		color: var(--text-offwhite) !important;
+		background-color: var(--bg-dark-new) !important;
+		border: 1px solid var(--bg1-dark) !important;
 		font-family: inherit !important;
 		-webkit-font-smoothing: antialiased !important;
 		-moz-osx-font-smoothing: grayscale !important;
@@ -1013,7 +866,7 @@
 	td>b,
 	tr>b,
 	p>b {
-		color: var(--light-green) !important;
+		color: var(--faded-green) !important;
 		font-weight: 500 !important;
 		-webkit-font-smoothing: antialiased !important;
 		-moz-osx-font-smoothing: grayscale !important;
@@ -1028,11 +881,11 @@
 
 	/* General link styling */
 	a {
-		color: var(--light-red) !important;
+		color: var(--faded-red) !important;
 		text-decoration: none !important;
 		font-family: var(--font-JetbrainsVar) !important;
 		font-weight: 600 !important;
-		text-decoration-color: var(--light-red) !important;
+		text-decoration-color: var(--faded-red) !important;
 		-webkit-font-smoothing: antialiased !important;
 		-moz-osx-font-smoothing: grayscale !important;
 		text-rendering: optimizeLegibility !important;
@@ -1042,14 +895,14 @@
 
 
 		&:hover {
-			color: var(--dark-orange) !important;
-			text-decoration: underline !important;
+			color: var(--faded-orange) !important;
+			text-decoration: underline  !important;
 			text-decoration-style: wavy !important;
 			text-decoration-thickness: 1px !important;
 			text-underline-offset: 2px !important;
 			transition: all 0.3s ease-in-out !important;
 			transform: translateY(-1px) !important;
-			text-shadow: 0 0 2px var(--dark-orange) !important;
+			text-shadow: 0 0 2px var(--faded-orange) !important;
 		}
 	}
 
@@ -1059,9 +912,9 @@
 		align-items: center;
 		min-height: 32px !important;
 		/* Reduced from 52px */
-		background: var(--bg1-light) !important;
-		border: 1px solid var(--bg3-light) !important;
-		color: var(--dark-orange) !important;
+		background: var(--bg-dark-new) !important;
+		border: 1px solid var(--bg1-dark) !important;
+		color: var(--text-normal) !important;
 		padding: 0 var(--gem-sys-spacing--xs) !important;
 		/* Horizontal padding only */
 		margin-top: var(--gem-sys-spacing--xs);
@@ -1077,8 +930,8 @@
 	}
 
 	.source-inline-chip-container>button {
-		background-color: var(--bg1-light) !important;
-		border: 1px solid var(--bg3-light) !important;
+		background-color: var(--bg-dark-new) !important;
+		border: 1px solid var(--bg1-dark) !important;
 		border-radius: 14px !important;
 		padding: 0px 4px !important;
 		width: 28px !important;
@@ -1087,21 +940,21 @@
 		transform: scale(1);
 		transition: all 0.2s cubic-bezier(0.68, -0.6, 0.32, 1.6) !important;
 		will-change: transform, box-shadow;
-		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 		position: relative;
 
 		&:hover {
-			border-color: var(--light-green) !important;
-			background-color: var(--bg3-light) !important;
+			border-color: var(--dim-green) !important;
+			background-color: var(--bg1-dark) !important;
 			padding: 0px 8px !important;
 			width: 38px !important;
 			transform: scale(1.05) translateY(-2px) !important;
-			box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+			box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 		}
 
 		&:active {
 			transform: scale(0.98) translateY(0) !important;
-			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 		}
 
 
@@ -1115,7 +968,7 @@
 
 	/* Style the icon inside the button */
 	.source-inline-chip-container>button .mat-icon {
-		color: var(--fg-light) !important;
+		color: var(--text-offwhite-faded) !important;
 		width: 16px !important;
 		height: 16px !important;
 		font-size: 16px !important;
@@ -1131,27 +984,27 @@
 	/* CITATIONS SIDE BAR SOURCES  */
 	/* Sources text in the header  */
 	.gds-title-l {
-		color: var(--dark-orange) !important;
+		color: var(--text-normal) !important;
 		font-weight: 500 !important;
 	}
 
 	/* Title of the hover  */
 	.gds-title-s :not(a) {
-		color: var(--dark-orange) !important;
+		color: var(--text-normal) !important;
 		font-weight: 500 !important;
 		text-decoration: underline !important;
 	}
 
 	/* Title of the Source */
 	.title.gds-title-m {
-		color: var(--light-green) !important;
+		color: var(--faded-green) !important;
 		font-style: italic !important;
 		margin-bottom: 4px !important;
 	}
 
 	/* Source path under the title */
 	.gds-title-s {
-		color: var(--dark-yellow) !important;
+		color: var(--faded-yellow) !important;
 		font-weight: medium !important;
 		font-size: 16px !important;
 		display: block !important;
@@ -1163,12 +1016,12 @@
 		opacity: 0.7 !important;
 		font-size: 0.9em !important;
 		margin-top: 2px !important;
-		color: var(--fg-light) !important;
+		color: var(--text-offwhite-faded) !important;
 	}
 
 	/* Body text snippet */
 	.snippet.gds-body-m {
-		color: var(--fg-light) !important;
+		color: var(--text-offwhite-faded) !important;
 		opacity: 0.9 !important;
 		font-size: 0.95em !important;
 		line-height: 1.5 !important;
@@ -1202,8 +1055,8 @@
 
 	/* Container of a single source in the side bar  */
 	.inline-source-card-container {
-		background: var(--bg1-light) !important;
-		border: 1px solid var(--bg3-light) !important;
+		background: var(--bg-dark-new) !important;
+		border: 1px solid var(--bg1-dark) !important;
 		border-radius: 14px !important;
 		padding: 16px !important;
 	}
@@ -1214,23 +1067,23 @@
 	/* Custom Styles */
 	/* Background color of the scroll container */
 	.chat-history-scroll-container {
-		background: var(--bg0-light) !important;
+		background: var(--bg-def-dark) !important;
 	}
 
 	/* Background color for the main chat area container */
 	.ia-redesign infinite-scroller {
-		background-color: var(--bg0-light) !important;
+		background-color: var(--bg-def-dark) !important;
 	}
 
 	/* Background color for the main chat area container */
 	.ia-redesign,
 	.ia-redesign infinite-scroller {
-		background-color: var(--bg0-light) !important;
+		background-color: var(--bg-def-dark) !important;
 	}
 
 	/* Background color for the main chat area container (User requested for sidebar) */
 	.ia-redesign infinite-scroller {
-		background-color: var(--bg0-light) !important;
+		background-color: var(--bg-def-dark) !important;
 	}
 
 
@@ -1239,11 +1092,11 @@
 	/* Styling for the 'Create Image' button label, 'Deep Research' button label,
 	   and 'Guided Learning' button label */
 	.card-zero-state {
-		background-color: var(--bg1-light) !important;
-		color: var(--grey2-light) !important;
+		background-color: var(--bg-dark-new) !important;
+		color: var(--text--faded) !important;
 		font-weight: 900 !important;
 
-		border: 0.24em solid var(--bg3-light) !important;
+		border: 0.24em solid var(--bg1-dark) !important;
 		border-radius: 3em !important;
 		padding: 0.8em 1em !important;
 		-webkit-font-smoothing: antialiased !important;
@@ -1251,9 +1104,9 @@
 		text-rendering: optimizeLegibility !important;
 
 		&:hover {
-			background-color: var(--bg3-light) !important;
+			background-color: var(--shadow-dark) !important;
 			font-weight: 500 !important;
-			border-color: var(--light-green) !important;
+			border-color: var(--dim-green) !important;
 			border-width: 0.3em !important;
 			padding: 0.8em 1.7em !important;
 			transition: background 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6),
@@ -1261,12 +1114,12 @@
 				padding 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6) !important;
 		}
 	}
-
+	
 
 
 	/* Styling for the Model Selector Titles (e.g., "Fast all-around help") */
 	span.mode-title.gds-label-l {
-		color: var(--light-green) !important;
+		color: var(--faded-green) !important;
 		-webkit-font-smoothing: antialiased !important;
 		-moz-osx-font-smoothing: grayscale !important;
 		text-rendering: optimizeLegibility !important;
@@ -1274,7 +1127,7 @@
 
 	/* Styling for the Model Selector Subtitle (e.g., "Choose your model") */
 	span.title.gds-label-s {
-		color: var(--light-green) !important;
+		color: var(--faded-green) !important;
 		-webkit-font-smoothing: antialiased !important;
 		-moz-osx-font-smoothing: grayscale !important;
 		text-rendering: optimizeLegibility !important;
@@ -1282,8 +1135,8 @@
 
 	/* Styling for all action buttons (Write, Build, Deep Research, Learn, etc.) */
 	button.mat-ripple.card.card-legacy {
-		background-color: var(--bg0-light) !important;
-		border: solid 2px var(--bg3-light) !important;
+		background-color: var(--bg-def-dark) !important;
+		border: solid 2px var(--bg1-dark) !important;
 		border-radius: 3em !important;
 		position: relative !important;
 		overflow: hidden !important;
@@ -1291,8 +1144,8 @@
 
 		&:hover {
 
-			background-color: var(--bg0-light) !important;
-			border-color: var(--light-green) !important;
+			background-color: var(--bg-def-dark) !important;
+			border-color: var(--dim-green) !important;
 			border-width: 0.24em !important;
 			padding: 0rem 2.2rem !important;
 		}
@@ -1304,7 +1157,7 @@
 
 	/* Styling for the Model Selector Subtitle (e.g., "Choose your model") */
 	button.card.card-legacy .card-label.gds-label-l {
-		color: var(--light-green) !important;
+		color: var(--dim-green) !important;
 		font-weight: 500 !important;
 		background-color: transparent !important;
 		padding: 0.2em 0.5em !important;
@@ -1313,22 +1166,22 @@
 
 	/* Styling for the Model Selector Subtitle (e.g., "Choose your model") */
 	button.card.card-legacy:hover .card-label.gds-label-l {
-		color: var(--grey2-light) !important;
+		color: var(--text--faded) !important;
 		font-weight: 600 !important;
 		border: weight 2px !important;
-		border-color: var(--grey2-light) !important;
+		border-color: var(--text--faded) !important;
 	}
 
 	/* Styling for Model Description (e.g., "2.5 Flash") */
 	span.mode-desc.gds-label-m-alt {
 		font-size: 0.9rem !important;
 		font-family: var(--font-GeistMono) !important;
-		color: var(--dark-orange) !important;
+		color: var(--faded-orange) !important;
 		font-weight: 700 !important;
 	}
 
 	.ql-editor.new-input-ui.ql-blank::after {
-		color: var(--fg-light) !important;
+		color: var(--text-offwhite) !important;
 		visibility: visible !important;
 	}
 
@@ -1338,33 +1191,33 @@
 	/* Toolbox drawer item specific styles */
 
 	.mat-mdc-card.toolbox-drawer-card {
-		background: var(--bg0-light);
+		background: var(--bg-def-dark);
 		border-radius: 4px !important;
-		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04) !important;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
 	}
 
 	.toolbox-drawer-menu-item {
-		background-color: var(--bg0-light) !important;
-		border: solid 1px var(--bg2-light) !important;
+		background-color: var(--bg-def-dark) !important;
+		border: solid 1px var(--bg-dark) !important;
 		border-radius: 0.8em !important;
 		transition: background 0.4s ease-in-out, border 0.5s ease-in-out, padding 0.3s ease-in-out !important;
 
 		&:hover {
 			background-color: inherit !important;
-			border-color: var(--grey1-light) !important;
+			border-color: var(--text--veryfade) !important;
 			border-width: 2px !important;
 		}
 	}
 
 	.toolbox-drawer-menu-item .mat-mdc-list-item-icon {
-		color: var(--light-green) !important;
+		color: var(--faded-green) !important;
 
 
 	}
 
 	.toolbox-drawer-menu-item .gds-label-l {
 		font-weight: bold !important;
-		color: var(--grey2-light) !important;
+		color: var(--text--faded) !important;
 		transition: background 0.4s ease-in-out, border 0.5s ease-in-out, padding 0.3s ease-in-out !important;
 	}
 
@@ -1374,15 +1227,15 @@
 
 	/* Bard Sidebar nav  */
 	bard-sidenav-container>* {
-		background-color: var(--bg0-light) !important;
-		border: solid 2px var(--bg3-light) !important;
+		background-color: var(--bg-def-dark) !important;
+		border: solid 2px var(--bg1-dark) !important;
 		border-radius: 0.4em !important;
 	}
 
 
 	/* New Chat , Explore Gems , Settings and Help text*/
 	.side-nav-action-button span.gds-body-m {
-		color: var(--light-green) !important;
+		color: var(--dim-green) !important;
 		font-family: inherit !important;
 		font-style: normal !important;
 		font-size: 0.85em !important;
@@ -1394,7 +1247,7 @@
 
 	/* SideBar Gems */
 	.bot-name.gds-body-m {
-		color: var(--dark-blue) !important;
+		color: var(--faded-blue) !important;
 		font-family: inherit !important;
 		font-style: normal !important;
 		font-size: 1.05em !important;
@@ -1407,7 +1260,7 @@
 
 	/* Old Conversation history with Gemini (Sidebar) */
 	.conversation {
-		color: var(--grey2-light) !important;
+		color: var(--text--faded) !important;
 		font-weight: 500 !important;
 		font-family: inherit !important;
 		font-style: normal !important;
@@ -1421,9 +1274,9 @@
 		margin: 2px 0 !important;
 
 		&:hover {
-			background-color: var(--bg0-light) !important;
-			border-color: solid 0.2em var(--bg4-light) !important;
-			color: var(--light-green) !important;
+			background-color: var(--bg-def-dark) !important;
+			border-color: solid 0.2em var(--bg2-dark) !important;
+			color: var(--faded-green) !important;
 			font-weight: 600 !important;
 			-webkit-font-smoothing: antialiased !important;
 			-moz-osx-font-smoothing: grayscale !important;
@@ -1431,7 +1284,7 @@
 
 
 			transform: translateY(-1px) scale(1.01);
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 		}
 
 
@@ -1440,9 +1293,9 @@
 	/* Chat Message Bubbles */
 	/* User Query Text Styling (The actual text inside the bubble) */
 	p.query-text-line.ng-star-inserted {
-		background-color: var(--bg1-light) !important;
-		color: var(--dark-orange) !important;
-		border: solid 1px var(--bg3-light) !important;
+		background-color: var(--bg-dark-new) !important;
+		color: var(--text-normal) !important;
+		border: solid 1px var(--bg1-dark) !important;
 		border-radius: 18px !important;
 		padding: 8px 16px !important;
 		font-size: 1rem !important;
@@ -1453,31 +1306,31 @@
 		text-rendering: optimizeLegibility !important;
 
 		&:hover {
-			background-color: var(--bg0-light) !important;
-			border-color: var(--dark-blue) !important;
+			background-color: var(--bg-def-dark) !important;
+			border-color: var(--faded-blue) !important;
 			transform: translateY(-1px) scale(1.005) !important;
-			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
 		}
 	}
 
 	/* Styling for action buttons (Copy, Edit) next to user query */
 	.query-content .action-button {
-		background-color: var(--bg1-light) !important;
-		border: solid 2px var(--bg5-light) !important;
+		background-color: var(--bg-dark-new) !important;
+		border: solid 2px var(--bg3-dark) !important;
 		border-radius: 50% !important;
 		transition: all 0.3s ease-in-out !important;
 
 		&:hover {
-			border-color: var(--light-green) !important;
-			background-color: var(--bg0-light) !important;
+			border-color: var(--faded-green) !important;
+			background-color: var(--bg-def-dark) !important;
 			transform: scale(1.1) !important;
-			box-shadow: 0 0 10px var(--light-green) !important;
+			box-shadow: 0 0 10px var(--faded-green) !important;
 		}
 	}
 
 	/* Icon inside the action button */
 	.query-content .action-button mat-icon {
-		color: var(--light-green) !important;
+		color: var(--faded-green) !important;
 		transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
 
 		&:hover {
@@ -1487,8 +1340,8 @@
 
 	/* Temporary Chat Button */
 	button[data-test-id="temp-chat-button"] {
-		background-color: var(--bg1-light) !important;
-		border: solid 2px var(--bg5-light) !important;
+		background-color: var(--bg-dark-new) !important;
+		border: solid 2px var(--bg3-dark) !important;
 		border-radius: 50% !important;
 		transition: all 0.3s ease-in-out !important;
 		-webkit-font-smoothing: antialiased !important;
@@ -1497,24 +1350,23 @@
 	}
 
 	button[data-test-id="temp-chat-button"]:hover {
-		border-color: var(--dark-aqua) !important;
-		background-color: var(--bg0-light) !important;
+		border-color: var(--faded-aqua) !important;
+		background-color: var(--bg-def-dark) !important;
 		transform: scale(1.1) !important;
-		box-shadow: 0 0 10px var(--dark-aqua) !important;
+		box-shadow: 0 0 10px var(--faded-aqua) !important;
 	}
 
 	button[data-test-id="temp-chat-button"] svg path {
-		fill: var(--dark-aqua) !important;
+		fill: var(--faded-aqua) !important;
 		transition: all 0.3s ease-in-out !important;
 	}
 
 	button[data-test-id="temp-chat-button"]:hover svg path {
-		fill: var(--light-green) !important;
+		fill: var(--faded-green) !important;
 	}
 
 	.user-query-bubble-with-background:not(.edit-mode) {
-		background: var(--bg2-light) !important;
-		border: 1px solid var(--bg4-light) !important;
+		background: transparent !important;
 		border-radius: 24px var(--gem-sys-shape--corner-extra-small) 24px 24px;
 		max-width: calc(476px - var(--gem-sys-spacing--m)*2);
 		padding: 12px 16px;
@@ -1527,16 +1379,16 @@
 		background: inherit !important;
 
 		&:hover {
-			background: var(--bg0-light) !important;
-			border: solid 0.2em var(--bg4-light) !important;
+			background: var(--bg-def-dark) !important;
+			border: solid 0.2em var(--bg2-dark) !important;
 		}
 	}
 
 
 	/* Side bar input box */
 	input-area-v2>div.input-area {
-		background-color: var(--bg1-light) !important;
-		border: solid 3px var(--bg3-light) !important;
+		background-color: var(--bg-dark-new) !important;
+		border: solid 3px var(--bg1-dark) !important;
 		border-radius: 12px !important;
 		box-shadow: none !important;
 	}
@@ -1545,7 +1397,7 @@
 
 	/* Gems and Recents (Sidebar)*/
 	h1.title.gds-label-l {
-		color: var(--light-green) !important;
+		color: var(--dim-green) !important;
 		font-weight: 600 !important;
 		font-family: inherit !important;
 		font-style: normal !important;
@@ -1558,13 +1410,13 @@
 	/* MODEL SELECTOR  */
 	/* Model Selector -> CHOOSE MODEL  */
 	button.mdc-button.mat-mdc-button-base.gds-mode-switch-button.logo-pill-btn {
-		background-color: var(--bg1-light) !important;
+		background-color: var(--bg-dark-new) !important;
 		padding: 0em 1em !important;
-		color: var(--light-green) !important;
+		color: var(--dim-green) !important;
 
 		&:hover {
-			background-color: var(--bg0-light) !important;
-			border: solid 0.2em var(--light-green) !important;
+			background-color: var(--bg-def-dark) !important;
+			border: solid 0.2em var(--dim-green) !important;
 			transition: border 0.5s ease-in-out !important;
 		}
 	}
@@ -1575,13 +1427,13 @@
 		font-weight: 500 !important;
 		font-style: normal !important;
 		font-size: 1em !important;
-		background: var(--bg1-light) !important;
-		border: solid 0.2em var(--bg4-light) !important;
+		background: var(--bg-dark-new) !important;
+		border: solid 0.2em var(--bg2-dark) !important;
 	}
 
 	/* Name of the models */
 	.gds-label-m {
-		color: var(--fg-light) !important;
+		color: var(--text-offwhite-faded) !important;
 		font-weight: 500 !important;
 		font-size: 0.8em !important;
 		-webkit-font-smoothing: antialiased !important;
@@ -1591,7 +1443,7 @@
 
 	/* Model info and details */
 	.mode-desc.gds-label-m-alt {
-		color: var(--light-red) !important;
+		color: var(--faded-red) !important;
 		font-weight: 500 !important;
 		font-size: 0.8em !important;
 		-webkit-font-smoothing: antialiased !important;
@@ -1601,7 +1453,7 @@
 
 	/* Choose your Model text  */
 	span.gds-label-l.title {
-		color: var(--light-green) !important;
+		color: var(--dim-green) !important;
 		font-family: inherit !important;
 		-webkit-font-smoothing: antialiased !important;
 		-moz-osx-font-smoothing: grayscale !important;
@@ -1614,14 +1466,14 @@
 
 	/* MODEL SELECTOR IN INPUT   */
 	span.mdc-button__label {
-		color: var(--grey2-light) !important;
+		color: var(--text--faded) !important;
 		font-weight: 500 !important;
 	}
 
 	/* THINNING button labels */
 	.mdc-button__label span {
 		font-weight: 400 !important;
-		color: var(--grey2-light) !important;
+		color: var(--text--faded) !important;
 		-webkit-font-smoothing: antialiased !important;
 		-moz-osx-font-smoothing: grayscale !important;
 		text-rendering: optimizeLegibility !important;
@@ -1631,29 +1483,29 @@
 	/* CHAT PAGE DIVS  */
 
 	.response-container-with-gpi {
-		background-color: var(--bg0-light) !important;
+		background-color: var(--bg-def-dark) !important;
 	}
 
 	/* INTERACTIVE CANVAS BLOCK  */
 	.immersive-entry-chip .container.clickable {
-		background-color: var(--bg1-light) !important;
-		color: var(--light-green) !important;
+		background-color: var(--bg-dark-new) !important;
+		color: var(--dim-green) !important;
 
 		&:hover {
-			background-color: var(--bg0-light) !important;
-			border: solid 0.1em var(--light-green) !important;
+			background-color: var(--bg-def-dark) !important;
+			border: solid 0.1em var(--dim-green) !important;
 			transition: all 0.5s ease-in-out !important;
 		}
 	}
 
 	/* Name of the canvas  */
 	.immersive-entry-chip .container.clickable .text {
-		color: var(--light-red) !important;
+		color: var(--faded-red) !important;
 	}
 
 	/* Date at which the software was craeted  */
 	.immersive-entry-chip .container.clickable .creation-timestamp {
-		color: var(--dark-yellow) !important;
+		color: var(--faded-yellow) !important;
 
 	}
 
@@ -1661,37 +1513,37 @@
 
 	/* OPEN BUTTON CLEAR */
 	.button-section button.mdc-button {
-		background-color: var(--bg1-light) !important;
-		border: solid 0.1em var(--bg5-light) !important;
+		background-color: var(--bg-dark-new) !important;
+		border: solid 0.1em var(--bg3-dark) !important;
 
 		&:hover {
-			background-color: var(--bg0-light) !important;
+			background-color: var(--bg-def-dark) !important;
 		}
 	}
 
 	/* OPEN text on the Canvas  */
 	.button-section .mdc-button__label span {
-		color: var(--light-green) !important;
+		color: var(--dim-green) !important;
 	}
 
 
 	/* DEEP RESEARCH STYLES */
 	/* Research roadmap container */
 	.container.hide-from-message-actions {
-		background-color: var(--bg1-light) !important;
-		border: 1px solid var(--bg3-light) !important;
+		background-color: var(--bg-dark-new) !important;
+		border: 1px solid var(--bg1-dark) !important;
 		border-radius: 12px !important;
 		padding: 16px !important;
 		transition: border-color 0.3s ease-in-out !important;
 
 		&:hover {
-			border-color: var(--bg4-light) !important;
+			border-color: var(--bg2-dark) !important;
 		}
 	}
 
 	/* Research plan title */
 	.container.hide-from-message-actions .gds-title-m {
-		color: var(--light-green) !important;
+		color: var(--dim-green) !important;
 		font-weight: 600 !important;
 		margin-bottom: 12px !important;
 		-webkit-font-smoothing: antialiased !important;
@@ -1701,23 +1553,23 @@
 
 	/* Individual research step container */
 	.research-step {
-		background-color: var(--bg0-light) !important;
-		border: 1px solid var(--bg4-light) !important;
+		background-color: var(--bg-def-dark) !important;
+		border: 1px solid var(--bg2-dark) !important;
 		border-radius: 8px !important;
 		padding: 12px !important;
 		margin-bottom: 8px !important;
 		transition: all 0.3s ease-in-out !important;
 
 		&:hover {
-			border-color: var(--bg5-light) !important;
+			border-color: var(--bg3-dark) !important;
 			transform: translateY(-1px) !important;
-			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06) !important;
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
 		}
 	}
 
 	/* Research step title */
 	.research-step-title.gds-title-s {
-		color: var(--dark-blue) !important;
+		color: var(--faded-blue) !important;
 		font-weight: 500 !important;
 		display: flex !important;
 		align-items: center !important;
@@ -1729,7 +1581,7 @@
 
 	/* Research step title icons */
 	.research-step-title.gds-title-s .mat-icon {
-		color: var(--dark-blue) !important;
+		color: var(--faded-blue) !important;
 		transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
 	}
 
@@ -1739,7 +1591,7 @@
 
 	/* Research step description */
 	.research-step-description {
-		color: var(--grey2-light) !important;
+		color: var(--text--faded) !important;
 		margin-top: 8px !important;
 		line-height: 1.5 !important;
 		-webkit-font-smoothing: antialiased !important;
@@ -1750,7 +1602,7 @@
 	/* More/Less toggle button */
 	.toggle-description-expansion-button {
 		background-color: transparent !important;
-		color: var(--dark-aqua) !important;
+		color: var(--faded-aqua) !important;
 		border: none !important;
 		font-size: 0.9em !important;
 		transition: color 0.3s ease-in-out !important;
@@ -1759,14 +1611,14 @@
 		text-rendering: optimizeLegibility !important;
 
 		&:hover {
-			color: var(--dark-blue) !important;
+			color: var(--faded-blue) !important;
 			text-decoration: underline !important;
 		}
 	}
 
 	/* Time estimation message */
 	.time-estimation-message {
-		color: var(--dark-yellow) !important;
+		color: var(--faded-yellow) !important;
 		display: flex !important;
 		align-items: center !important;
 		gap: 6px !important;
@@ -1777,7 +1629,7 @@
 	}
 
 	.time-estimation-message .mat-icon {
-		color: var(--dark-yellow) !important;
+		color: var(--faded-yellow) !important;
 	}
 
 	/* Action buttons wrapper */
@@ -1789,9 +1641,9 @@
 
 	/* Edit plan button (outlined style) */
 	.action-button-wrapper .edit-button {
-		background-color: var(--bg1-light) !important;
-		border: 2px solid var(--bg5-light) !important;
-		color: var(--grey2-light) !important;
+		background-color: var(--bg-dark-new) !important;
+		border: 2px solid var(--bg3-dark) !important;
+		color: var(--text--faded) !important;
 		border-radius: 8px !important;
 		padding: 8px 16px !important;
 		transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.2s ease-in-out !important;
@@ -1800,9 +1652,9 @@
 		text-rendering: optimizeLegibility !important;
 
 		&:hover {
-			background-color: var(--bg0-light) !important;
-			border-color: var(--dark-blue) !important;
-			color: var(--dark-blue) !important;
+			background-color: var(--bg-def-dark) !important;
+			border-color: var(--faded-blue) !important;
+			color: var(--faded-blue) !important;
 			transform: scale(1.02) !important;
 		}
 
@@ -1813,9 +1665,9 @@
 
 	/* Start research button (solid style) */
 	.action-button-wrapper .confirm-button {
-		background-color: var(--light-red) !important;
-		color: var(--fg-light) !important;
-		border: 2px solid var(--light-red) !important;
+		background-color: var(--dark-red) !important;
+		color: var(--text-offwhite) !important;
+		border: 2px solid var(--dark-red) !important;
 		border-radius: 8px !important;
 		padding: 8px 16px !important;
 		font-weight: 600 !important;
@@ -1825,9 +1677,9 @@
 		text-rendering: optimizeLegibility !important;
 
 		&:hover {
-			background-color: var(--light-red) !important;
-			color: var(--bg2-light) !important;
-			border-color: var(--dark-orange) !important;
+			background-color: var(--dark-red) !important;
+			color: var(--bg-dark) !important;
+			border-color: var(--text-normal) !important;
 
 		}
 
@@ -1838,8 +1690,8 @@
 
 	/* Canvas Create Button - dark theme */
 	.create-button {
-		background-color: var(--light-green) !important;
-		color: var(--fg-light) !important;
+		background-color: var(--dark-green) !important;
+		color: var(--text-offwhite) !important;
 	}
 
 	/* Button labels */
@@ -1864,7 +1716,7 @@
 	/* Math blocks */
 	.math-block,
 	.math-block * {
-		color: var(--light-red) !important;
+		color: var(--faded-red) !important;
 		-webkit-font-smoothing: antialiased !important;
 		-moz-osx-font-smoothing: grayscale !important;
 		text-rendering: optimizeLegibility !important;
@@ -1876,7 +1728,7 @@
 		border-color: currentColor !important;
 		font-family: newfont !important;
 		font-size: 1rem !important;
-		color: var(--light-red) !important;
+		color: var(--faded-red) !important;
 		font-weight: 550 !important;
 		-webkit-font-smoothing: antialiased !important;
 		-moz-osx-font-smoothing: grayscale !important;
@@ -1898,51 +1750,51 @@
 
 	/* Set canvas font  */
 	xap-code-editor .xap-monaco-container .monaco-editor {
-		background-color: var(--bg0-light) !important;
+		background-color: var(--bg-def-dark) !important;
 		font-family: "Geist Mono" !important;
 	}
 
 	/*Set canvas font for scrollable element */
 	xap-code-editor .xap-monaco-container .monaco-editor .monaco-scrollable-element {
-		background-color: var(--bg0-light) !important;
+		background-color: var(--bg-def-dark) !important;
 		font-family: "Geist Mono" !important;
 	}
 
 	/* Set canvas font for view lines */
 	xap-code-editor .xap-monaco-container .monaco-editor .view-lines {
-		background-color: var(--bg0-light) !important;
+		background-color: var(--bg-def-dark) !important;
 		font-family: "Geist Mono" !important;
 	}
 
 	/* Set canvas font for line numbers */
 	xap-code-editor .xap-monaco-container .monaco-editor .line-numbers,
 	xap-code-editor .xap-monaco-container * {
-		background-color: var(--bg0-light) !important;
-		color: var(--bg5-light) !important;
+		background-color: var(--bg-def-dark) !important;
+		color: var(--bg3-dark) !important;
 		font-family: "Geist Mono" !important;
 
 		&:hover {
-			background-color: var(--bg1-light) !important;
-			color: var(--grey2-light) !important;
+			background-color: var(--bg-dark-new) !important;
+			color: var(--text--faded) !important;
 			transition: all 0.1s ease-in-out !important;
 		}
 	}
 
 	/* Set canvas font for active line number */
 	xap-code-editor .xap-monaco-container .monaco-editor .active-line-number {
-		color: var(--light-green) !important;
+		color: var(--dim-green) !important;
 		font-family: "Geist Mono" !important;
 	}
 
 	/* Set canvas font  */
 	xap-code-editor>* {
 		font-family: "Geist Mono" !important;
-		background-color: var(--bg0-light) !important;
+		background-color: var(--bg-def-dark) !important;
 	}
 
 	/* set canvas font globally for all the text in the canvas */
 	xap-code-editor .mtk1 {
-		color: var(--fg-light) !important;
+		color: var(--text-offwhite-faded) !important;
 		font-family: 'Geist Mono' !important;
 		font-weight: 600 !important;
 		-webkit-font-smoothing: antialiased !important;
@@ -1956,8 +1808,8 @@
 
 	/* ADD THIS AS HOVER PLESE  */
 	/* .mat-mdc-button-touch-target {
-/* background-color: var(--bg1-light) !important;
-border: solid 0.2em var(--light-green) !important;
+/* background-color: var(--bg-dark-new) !important;
+border: solid 0.2em var(--dim-green) !important;
 border-radius: 3em !important;
 } */
 
@@ -2015,9 +1867,7 @@ Loading Fonts from the web for  this
 	/*Hide Grok Logo*/
 	/*Front page Logo*/
 	if noLogo {
-
-		.greeting-container,
-		.message-text {
+		.greeting-container , .message-text{
 			opacity: 0 !important;
 		}
 	}
@@ -2149,9 +1999,9 @@ Loading Fonts from the web for  this
 		font-family: "Geist Mono" !important;
 		font-size: 0.8em !important;
 		font-weight: 700 !important;
-		color: var(--light-green) !important;
-		background-color: var(--bg1-light) !important;
-		border: solid 0.2em var(--bg3-light) !important;
+		color: var(--dim-green) !important;
+		background-color: var(--bg-dark-new) !important;
+		border: solid 0.2em var(--bg1-dark) !important;
 		border-radius: 4em !important;
 		padding: 0.2em 1em !important;
 	}
@@ -2164,8 +2014,8 @@ Loading Fonts from the web for  this
 	code,
 	code-block,
 	.code-block-decoration {
-		background-color: var(--bg1-light) !important;
-		color: var(--light-green) !important;
+		background-color: var(--bg-dark-new) !important;
+		color: var(--faded-green) !important;
 
 		font-family: "Geist Mono" !important;
 		font-size: 0.9rem !important;
@@ -2186,59 +2036,59 @@ Loading Fonts from the web for  this
 
 
 	code[data-test-id="code-content"]#text {
-		color: var(--light-green) !important;
+		color: var(--dim-green) !important;
 	}
 
 	/*COLORS OF TOKENS OF CODE   */
 	code[data-test-id="code-content"] .hljs-meta-keyword {
-		color: var(--dark-aqua) !important;
+		color: var(--faded-aqua) !important;
 	}
 
 
 	code[data-test-id="code-content"] .hljs-meta {
-		color: var(--light-red) !important;
+		color: var(--faded-red) !important;
 	}
 
 
 	code[data-test-id="code-content"] .hljs-meta-string {
-		color: var(--light-green) !important;
+		color: var(--faded-green) !important;
 
 	}
 
 	code[data-test-id="code-content"] .hljs-keyword {
-		color: var(--dark-orange) !important;
+		color: var(--faded-orange) !important;
 	}
 
 	code[data-test-id="code-content"] .hljs-comment {
-		color: var(--grey1-light) !important;
+		color: var(--text--veryfade) !important;
 	}
 
 	code[data-test-id="code-content"] .hljs-string {
-		color: var(--light-green) !important;
+		color: var(--faded-green) !important;
 	}
 
 	code[data-test-id="code-content"] .hljs-number {
-		color: var(--light-red) !important;
+		color: var(--faded-red) !important;
 	}
 
 	code[data-test-id="code-content"] .hljs-function .hljs-title {
-		color: var(--light-red) !important;
+		color: var(--faded-red) !important;
 	}
 
 	code[data-test-id="code-content"] .hljs-built_in {
-		color: var(--dark-purple) !important;
+		color: var(--faded-purple) !important;
 	}
 
 	code[data-test-id="code-content"] .hljs-variable {
-		color: var(--dark-aqua) !important;
+		color: var(--faded-aqua) !important;
 	}
 
 	code[data-test-id="code-content"] .hljs-literal {
-		color: var(--dark-purple) !important;
+		color: var(--faded-purple) !important;
 	}
 
 	code[data-test-id="code-content"] .hljs-attribute {
-		color: var(--dark-aqua) !important;
+		color: var(--faded-aqua) !important;
 	}
 
 
@@ -2257,8 +2107,8 @@ Loading Fonts from the web for  this
 	}
 
 	deep-research-entry-chip-content .content-container {
-		background-color: var(--bg0-light) !important;
-		border: 1px solid var(--bg3-light) !important;
+		background-color: var(--bg-def-dark) !important;
+		border: 1px solid var(--bg1-dark) !important;
 		border-radius: 8px !important;
 		padding: 12px 16px !important;
 		margin: 8px 0 !important;
@@ -2269,8 +2119,8 @@ Loading Fonts from the web for  this
 	}
 
 	deep-research-entry-chip-content .content-container:hover {
-		background-color: var(--bg1-light) !important;
-		border-color: var(--dark-blue) !important;
+		background-color: var(--bg-dark-new) !important;
+		border-color: var(--faded-blue) !important;
 	}
 
 	deep-research-entry-chip-content .icon-container {
@@ -2280,7 +2130,7 @@ Loading Fonts from the web for  this
 	}
 
 	deep-research-entry-chip-content .mat-icon {
-		color: var(--dark-blue) !important;
+		color: var(--faded-blue) !important;
 		font-size: 24px !important;
 		width: 24px !important;
 		height: 24px !important;
@@ -2294,13 +2144,13 @@ Loading Fonts from the web for  this
 	}
 
 	deep-research-entry-chip-content .title-text {
-		color: var(--fg-light) !important;
+		color: var(--text-offwhite) !important;
 		font-size: 0.95rem !important;
 		font-weight: 500 !important;
 	}
 
 	deep-research-entry-chip-content .creation-timestamp {
-		color: var(--grey2-light) !important;
+		color: var(--text--faded) !important;
 		font-size: 0.8rem !important;
 		font-weight: 400 !important;
 	}
@@ -2309,427 +2159,5 @@ Loading Fonts from the web for  this
 		display: none !important;
 	}
 
-
-	/* ============================================= */
-	/* NUCLEAR LIGHT THEME OVERRIDES - FORCE ALL */
-	/* ============================================= */
-
-	/* Force light on ALL elements with dark backgrounds */
-	* {
-		--bard-color-neutral-90: var(--bg3-light) !important;
-		--bard-color-neutral-95: var(--bg2-light) !important;
-		--bard-color-neutral-96: var(--bg1-light) !important;
-		--bard-color-sidenav-background-desktop: var(--bg1-light) !important;
-		--bard-color-sidenav-background-mobile: var(--bg1-light) !important;
-		--gem-sys-color--surface: var(--bg0-light) !important;
-		--gem-sys-color--surface-container: var(--bg1-light) !important;
-		--gem-sys-color--surface-container-low: var(--bg2-light) !important;
-		--gem-sys-color--surface-container-high: var(--bg0-light) !important;
-		--gem-sys-color--surface-variant: var(--bg2-light) !important;
-		--gem-sys-color--on-surface: var(--fg-light) !important;
-		--gem-sys-color--on-surface-variant: var(--grey2-light) !important;
-		--gem-sys-color--outline: var(--bg4-light) !important;
-		--gem-sys-color--outline-variant: var(--bg3-light) !important;
-	}
-
-	/* Dark mode class override */
-	.dark-theme,
-	.dark-mode,
-	[data-theme="dark"],
-	[theme="dark"] {
-		background-color: var(--bg0-light) !important;
-		background: var(--bg0-light) !important;
-		color: var(--fg-light) !important;
-	}
-
-	/* Force sidenav specifically */
-	.gmat-sidenav-container,
-	mat-sidenav.mat-drawer,
-	.mat-drawer.mat-sidenav,
-	bard-sidenav-container .mat-drawer-container,
-	bard-sidenav-container mat-sidenav,
-	.bard-sidenav bard-sidenav-content {
-		background: var(--bg1-light) !important;
-		background-color: var(--bg1-light) !important;
-	}
-
-	/* Recent gems tiles */
-	.tile-container,
-	.tiles-container,
-	.recent-tile,
-	.gem-tile-container,
-	.recent-gems-container,
-	pinned-bots,
-	recent-bots {
-		background: var(--bg1-light) !important;
-		background-color: var(--bg1-light) !important;
-	}
-
-	/* Each gem/bot image tile */
-	.tile,
-	.bot-tile,
-	.gem-item,
-	.bot-item {
-		background: var(--bg2-light) !important;
-		border: 1px solid var(--bg4-light) !important;
-		border-radius: 8px !important;
-	}
-
-	/* Input area bottom bar */
-	.bottom-bar,
-	.action-bar,
-	.toolbar-bottom,
-	footer,
-	.input-footer {
-		background: var(--bg1-light) !important;
-		background-color: var(--bg1-light) !important;
-		border-top: 1px solid var(--bg3-light) !important;
-	}
-
-	/* Model selector and menu */
-	.model-selector,
-	.mode-switcher,
-	.gds-mode-switch-button {
-		background: var(--bg1-light) !important;
-		border-color: var(--bg4-light) !important;
-	}
-
-	/* Scrollbar styling for light theme */
-	::-webkit-scrollbar {
-		width: 8px;
-		height: 8px;
-	}
-
-	::-webkit-scrollbar-track {
-		background: var(--bg2-light);
-		border-radius: 4px;
-	}
-
-	::-webkit-scrollbar-thumb {
-		background: var(--bg5-light);
-		border-radius: 4px;
-	}
-
-	::-webkit-scrollbar-thumb:hover {
-		background: var(--grey0-light);
-	}
-
-
-	/* ============================================= */
-	/* EXACT GEMINI CLASS OVERRIDES FROM HTML */
-	/* ============================================= */
-
-	/* INPUT AREA - THE BLACK AREA AT BOTTOM */
-	.input-area-container,
-	.input-area,
-	.input-gradient,
-	.text-input-field,
-	.text-input-field-main-area,
-	.text-input-field_textarea,
-	.text-input-field_textarea-wrapper,
-	.text-input-field_textarea-inner,
-	.ql-editor.textarea,
-	.input-buttons-wrapper-bottom,
-	.bottom-section-container,
-	.input-box-shadow,
-	.center-input-layout,
-	.with-toolbox-drawer,
-	.discovery-feed-theme,
-	.toolbox-drawer-container,
-	.toolbox-drawer-button-container {
-		background: var(--bg1-light) !important;
-		background-color: var(--bg1-light) !important;
-		border-color: var(--bg4-light) !important;
-	}
-
-	/* Input box itself */
-	.ql-container,
-	.ql-bubble,
-	.ql-editor {
-		background: var(--bg0-light) !important;
-		background-color: var(--bg0-light) !important;
-		color: var(--fg-light) !important;
-	}
-
-	/* Bottom gradient - force visible light */
-	.bottom-gradient,
-	.bottom-gradient-container {
-		background: linear-gradient(to top, var(--bg1-light) 0%, transparent 100%) !important;
-	}
-
-	/* SIDENAV - THE DARK SIDEBAR */
-	.sidenav-with-history-container,
-	.sidenav-style-updates,
-	.side-nav-expanded,
-	.side-nav-open,
-	.side-nav-opened,
-	.side-nav-menu-button,
-	.side-nav-entry-container,
-	.side-nav-action-button,
-	.side-nav-entry-button,
-	.side-nav-style-updates,
-	.side-nav-mystuff-update,
-	.my-stuff-side-nav,
-	.mystuff-side-nav-update,
-	.conversation-items-container,
-	.conversation-actions-container,
-	.title-container,
-	.bot-list-item--expanded,
-	.bot-new-conversation-button,
-	.bot-actions-menu-button {
-		background: var(--bg1-light) !important;
-		background-color: var(--bg1-light) !important;
-	}
-
-	/* Sidebar title areas */
-	.title-container,
-	.title.gds-label-l {
-		background: transparent !important;
-		color: var(--light-green) !important;
-	}
-
-	/* Footer area */
-	.footer {
-		background: var(--bg1-light) !important;
-		background-color: var(--bg1-light) !important;
-		border-top: 1px solid var(--bg3-light) !important;
-	}
-
-	/* Top bar */
-	.top-bar-actions {
-		background: var(--bg0-light) !important;
-	}
-
-	/* Logo areas */
-	.bard-logo-container,
-	.bard-text,
-	.logo-pill-label-container,
-	.pill-ui-logo-container,
-	.input-area-switch {
-		background: transparent !important;
-	}
-
-	/* Toolbox drawer menu items */
-	.toolbox-drawer-button,
-	.toolbox-drawer-button-with-label {
-		background: var(--bg2-light) !important;
-		border: 1px solid var(--bg4-light) !important;
-	}
-
-	/* Explicit GMAT override elements */
-	.explicit-gmat-override {
-		background: var(--bg1-light) !important;
-		background-color: var(--bg1-light) !important;
-	}
-
-	/* Search button in sidebar */
-	.search-button {
-		background: transparent !important;
-	}
-
-	/* UI improvements phase 1 elements */
-	.ui-improvements-phase-1 {
-		background: var(--bg1-light) !important;
-		background-color: var(--bg1-light) !important;
-	}
-
-	/* Override ia-redesign dark backgrounds */
-	.ia-redesign {
-		background: var(--bg1-light) !important;
-		background-color: var(--bg1-light) !important;
-	}
-
-	/* Disable onload animations that might flash dark */
-	.disable-onload-animations {
-		background: var(--bg1-light) !important;
-	}
-
-	/* All elements inside input area */
-	[class*="input-area"] *,
-	[class*="text-input"] *,
-	[class*="bottom-section"] * {
-		background-color: transparent !important;
-	}
-
-	[class*="input-area"],
-	[class*="text-input"],
-	[class*="bottom-section"] {
-		background: var(--bg1-light) !important;
-		background-color: var(--bg1-light) !important;
-	}
-
-	/* All elements inside sidenav */
-	[class*="sidenav"] *,
-	[class*="side-nav"] * {
-		background-color: transparent !important;
-	}
-
-	[class*="sidenav"],
-	[class*="side-nav"] {
-		background: var(--bg1-light) !important;
-		background-color: var(--bg1-light) !important;
-	}
-
-	/* ============================================= */
-	/* VISUAL POLISH - Depth, Contrast & Aesthetics */
-	/* ============================================= */
-
-	/* Input area with visible separation */
-	.input-area-container,
-	.input-area {
-		box-shadow: 0 -4px 20px rgba(60, 50, 40, 0.08) !important;
-		border-top: 2px solid var(--bg4-light) !important;
-		background: var(--bg2-light) !important;
-	}
-
-	/* Sidebar with warm shadow and border */
-	.sidenav-with-history-container {
-		box-shadow: 4px 0 20px rgba(60, 50, 40, 0.08) !important;
-		border-right: 2px solid var(--bg3-light) !important;
-		background: var(--bg1-light) !important;
-	}
-
-	/* Main content area - slightly off-white */
-	.chat-history-scroll-container,
-	.response-container-with-gpi,
-	.ia-redesign,
-	.infinite-scroller {
-		background: var(--bg0-light) !important;
-	}
-
-	/* Cards with strong elevation */
-	.card-zero-state,
-	.card.card-legacy,
-	button.mat-ripple.card {
-		background: var(--bg-light) !important;
-		box-shadow: 0 3px 12px rgba(60, 50, 40, 0.12) !important;
-		border: 1px solid var(--bg4-light) !important;
-		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-	}
-
-	.card-zero-state:hover,
-	.card.card-legacy:hover,
-	button.mat-ripple.card:hover {
-		box-shadow: 0 6px 24px rgba(60, 50, 40, 0.18) !important;
-		border-color: var(--light-green) !important;
-		transform: translateY(-3px) !important;
-	}
-
-	/* User query bubble - distinct from background */
-	p.query-text-line.ng-star-inserted {
-		background: var(--bg2-light) !important;
-		border: 2px solid var(--bg4-light) !important;
-		box-shadow: 0 2px 8px rgba(60, 50, 40, 0.08) !important;
-	}
-
-	/* Conversation items in sidebar */
-	.conversation {
-		background: transparent !important;
-		border: 1px solid transparent !important;
-		transition: all 0.2s ease !important;
-	}
-
-	.conversation:hover {
-		background: var(--bg2-light) !important;
-		border-color: var(--bg4-light) !important;
-		box-shadow: 0 2px 8px rgba(60, 50, 40, 0.1) !important;
-	}
-
-	/* Gem tiles with clear boundaries */
-	.gem-tile,
-	.bot-tile,
-	.tile {
-		background: var(--bg2-light) !important;
-		border: 2px solid var(--bg4-light) !important;
-		border-radius: 12px !important;
-		box-shadow: 0 2px 6px rgba(60, 50, 40, 0.08) !important;
-	}
-
-	.gem-tile:hover,
-	.bot-tile:hover,
-	.tile:hover {
-		border-color: var(--light-aqua) !important;
-		box-shadow: 0 4px 12px rgba(60, 50, 40, 0.14) !important;
-	}
-
-	/* Input field styling */
-	.ql-editor,
-	.ql-container {
-		background: var(--bg0-light) !important;
-		border: 2px solid var(--bg4-light) !important;
-		border-radius: 16px !important;
-	}
-
-	/* Model selector button */
-	.gds-mode-switch-button,
-	.logo-pill-btn {
-		background: var(--bg2-light) !important;
-		border: 2px solid var(--bg4-light) !important;
-		box-shadow: 0 2px 6px rgba(60, 50, 40, 0.08) !important;
-	}
-
-	.gds-mode-switch-button:hover,
-	.logo-pill-btn:hover {
-		border-color: var(--light-green) !important;
-		box-shadow: 0 3px 10px rgba(60, 50, 40, 0.12) !important;
-	}
-
-	/* Section dividers */
-	.title-container {
-		border-bottom: 1px solid var(--bg4-light) !important;
-		padding-bottom: 8px !important;
-		margin-bottom: 8px !important;
-	}
-
-	/* Better button styling */
-	button:not(.mat-mdc-icon-button) {
-		border-radius: 12px !important;
-	}
-
-	/* Menu items with hover */
-	.toolbox-drawer-menu-item:hover {
-		background: var(--bg3-light) !important;
-		border-color: var(--light-green) !important;
-	}
-
-	/* Table styling for contrast */
-	table {
-		border: 2px solid var(--bg4-light) !important;
-		border-radius: 8px !important;
-		overflow: hidden !important;
-	}
-
-	th {
-		background: var(--bg3-light) !important;
-		color: var(--fg-light) !important;
-		font-weight: 600 !important;
-		border-bottom: 2px solid var(--bg4-light) !important;
-	}
-
-	td,
-	tr {
-		background: var(--bg0-light) !important;
-		border-color: var(--bg3-light) !important;
-	}
-
-	tr:nth-child(even) td {
-		background: var(--bg2-light) !important;
-	}
-
-	/* Code blocks with visible contrast */
-	code,
-	code-block,
-	.code-block-decoration {
-		background: var(--bg2-light) !important;
-		border: 1px solid var(--bg4-light) !important;
-		border-radius: 8px !important;
-	}
-
-	/* Inline code */
-	p>code {
-		background: var(--bg3-light) !important;
-		border: 1px solid var(--bg4-light) !important;
-		color: var(--dark-green) !important;
-	}
 
 }
