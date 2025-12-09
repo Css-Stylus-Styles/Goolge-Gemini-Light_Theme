@@ -12,6 +12,25 @@
 ]
 
 @var select headfont 'Heading Font' [
+    'Inherit',
+    'Bricolage Grotesque Variable',
+]	
+
+@var select newfont 'Text Font' [
+    'Test Tiempos Text',
+    'Website Default',
+	'Geist Sans',
+	'Test Tiempos Text Medium',
+]
+
+@var select headfont 'Heading Font' [
+  'Inherit',
+  'Bricolage Grotesque Variable',
+
+]
+
+
+
   'Inherit',
   'Bricolage Grotesque Variable',
 
